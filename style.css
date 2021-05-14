@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+body{
+    background-color: rgb(60,100,100);
+    font-family: 'Ubuntu', sans-serif;
+    font-size:0.910em;
+    margin:0em;
+}
+#page{
+    display: flex;
+    border:0px solid red;/* box */
+    flex-wrap: wrap;
+    height:100vh;
+    width:auto;
+    margin:0em;
+
+}
+#sidebar{
+    margin:0.1em 0.2em 0.1em 0.2em;
+    padding:0.1em;
+    border: 2px solid black;
+    border-radius: 5%;
+    display:flex;
+    flex-direction:column;
+    float:left;
+    align-content: center;
+    color:white;
+    background-image: linear-gradient(to bottom left,rgb(40,40,40) ,rgb(46, 163, 151) );
+    width: 18%;
+    height:auto;
+}
+h1{
+    text-align: center;
+    margin-top: 1.7em;
+}
+#photo{
+    display: block;
+    width: 150px;height:150px;
+    margin:1em auto auto;
+    border:1px solid black;
+    border-radius:50%;
+
+}
+li{
+    list-style: none;
+    padding:1em 1em ;
+}
+
+a{
+    color:white;
+    text-decoration:none;
+    transition-delay: 0.1s;
+    transition-duration: 0.8s;
+}
+
+a:hover{
+    color:black;
+    text-decoration:underline;
+    font-weight:bold;
+    font-size:1.1em;
+}
+#mail:after{
+    content:'Contact';
+}
+#mail:hover:after{
+    content:'dylanmaertens@gmail.com';
+    font-size: 0.9em;
+}
+
+#competence{
+    display: flex;
+    border:0px solid blue; /* Box */
+    flex-wrap: wrap;
+    height:99vh;
+    width: 80%;
+    justify-content: space-around;
+    margin:auto;
+}
+.competences{
+    background-color: rgb(40,110,110);
+    border:2px solid black;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding:0.5em;
+    margin:0.1em;
+    color: white;
+    width: 46%;
+    height: auto;
+}
+.competences li{
+    margin:0;padding:0;
+    margin: 0.3em 0.3em;
+}
+
+@media only screen and (max-width: 1140px){
+    #sidebar{
+        margin:auto;
+        height: auto;
+        align-items:center;
+        width: 80%;
+        }
+    #competence{
+        flex-direction: column;
+        align-items:left;
+        margin:auto;
+        height: auto;
+        flex-wrap:wrap;
+        width: auto;
+    }   
+    .competences{
+        align-items:center;
+        height: auto;
+        width: auto;
+    }
+}
+
+@media only screen and (min-width: 1920px){
+    body{
+        font-size: 1.7em;}
+    #side{
+        padding:2em 1em;
+    }
+    #photo{
+        width:300px;height:300px;
+    }
+}
