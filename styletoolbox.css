@@ -1,0 +1,49 @@
+body{
+    font-family: 'Ubuntu', sans-serif;
+    font-size:0.910em;
+    box-sizing: content-box;
+    margin:0;
+    padding:0;
+    overflow: visible;
+    /*border:1px solid darkgoldenrod; /* Box */
+    background: linear-gradient(to bottom left, rgb(53, 192, 178), rgb(40,40,40),rgb(40, 40, 40), rgb(53, 192, 178));
+    background-size: 600% 600%;
+    animation: AnimationName 15s ease infinite;
+    color:white;
+}
+@keyframes AnimationName {
+    0%{background-position:0% 91%}
+    50%{background-position:100% 10%}
+    100%{background-position:0% 91%}
+}
+.toolbox{
+    background-color:rgb(40,110,110);
+    width: 90%;
+    height: 99.3vh;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: auto;
+    padding: auto;
+    position: relative;
+}
+#acceuil{
+position: absolute;
+margin:0.5em;
+}
+div ul p,ion-icon{
+    font-size:24px;
+    text-decoration: underline;
+}
+div ul li{
+    font-size:18px;
+    list-style: none;
+    margin-left:0.8em;
+    margin-bottom: 0.4em;
+
+}
+.link{
+    color:white;
+    text-decoration: none;
+}

@@ -1,126 +1,261 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 body{
-    background-color: rgb(60,100,100);
     font-family: 'Ubuntu', sans-serif;
     font-size:0.910em;
-    margin:0em;
+    box-sizing: content-box;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+    /*border:1px solid darkgoldenrod; /* Box */
+    background: linear-gradient(to bottom left, rgb(53, 192, 178), rgb(40,40,40),rgb(40, 40, 40), rgb(53, 192, 178));
+    background-size: 600% 600%;
+    animation: AnimationName 15s ease infinite;
 }
-#page{
+@keyframes AnimationName {
+    0%{background-position:0% 91%}
+    50%{background-position:100% 10%}
+    100%{background-position:0% 91%}
+}
+.sidebar_before{
+    margin: 0.2em auto;
+    border: 2px solid black;
+    border-radius: 5%;
     display: flex;
-    border:0px solid red;/* box */
-    flex-wrap: wrap;
-    height:100vh;
-    width:auto;
-    margin:0em;
-
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    color: white;
+    width: 80%;
+    height: 98vh;
+    background-image: linear-gradient(to bottom left,rgb(40,40,40) ,rgb(46, 163, 151) );
+    transition: ease 0.7s;
+    position: relative;
 }
-#sidebar{
-    margin:0.1em 0.2em 0.1em 0.2em;
-    padding:0.1em;
+.sidebar_after{
+    padding:auto;
     border: 2px solid black;
     border-radius: 5%;
     display:flex;
     flex-direction:column;
-    float:left;
-    align-content: center;
+    align-items: center;
     color:white;
-    background-image: linear-gradient(to bottom left,rgb(40,40,40) ,rgb(46, 163, 151) );
-    width: 18%;
-    height:auto;
+    /*background-image: linear-gradient(to bottom left,rgb(40,40,40) ,rgb(46, 163, 151) );*/
+    width:20%;
+    height:98vh;
+    transition: ease 0.7s;
+    position:relative;
+    margin-left:0.5em;
 }
+
 h1{
-    text-align: center;
-    margin-top: 1.7em;
+    margin-top:0.8em;
 }
 #photo{
-    display: block;
-    width: 150px;height:150px;
-    margin:1em auto auto;
-    border:1px solid black;
-    border-radius:50%;
-
+    display:block;
+    margin:0.5em;
+    width: 160px;
+    height: 160px;
 }
+
 li{
     list-style: none;
     padding:1em 1em ;
 }
 
-a{
-    color:white;
-    text-decoration:none;
-    transition-delay: 0.1s;
-    transition-duration: 0.8s;
-}
-
-a:hover{
-    color:black;
-    text-decoration:underline;
-    font-weight:bold;
-    font-size:1.1em;
-}
-#mail:after{
-    content:'Contact';
-}
-#mail:hover:after{
-    content:'dylanmaertens@gmail.com';
-    font-size: 0.9em;
-}
-
-#competence{
+.competence{  
     display: flex;
-    border:0px solid blue; /* Box */
+    /*border:2px solid blue; /* Box */
     flex-wrap: wrap;
-    height:99vh;
-    width: 80%;
-    justify-content: space-around;
-    margin:auto;
-}
+    flex-direction: row;
+    height:98vh;
+    width: 77%;
+    justify-content: center;
+    transform: translateY(110%);
+    position:absolute;
+    margin:0.3em;
+    left:20em;
+    transition: ease 0.7s;
+    }
+    
 .competences{
     background-color: rgb(40,110,110);
     border:2px solid black;
     flex-direction: row;
     flex-wrap: wrap;
     padding:0.5em;
-    margin:0.2em;
+    margin:0.1em;
     color: white;
-    width: 46%;
+    width:45%;
     height: auto;
 }
 .competences li{
-    margin:0;padding:0;
+    padding:0;
     margin: 0.3em 0.3em;
+}
+.competences p {
+    text-decoration: underline;
+}
+.portefolio{
+    /*border:2px solid rgb(0, 0, 0); /* Box */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    height:99vh;
+    width: 77%;
+    transform: translateY(110%);
+    position:absolute;
+    margin:0.5em;
+    left:20em;
+    transition: ease 0.7s;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar{
+    width: 0.5em;
+}
+::-webkit-scrollbar-track {
+    background: white;
+}
+::-webkit-scrollbar-thumb {
+    background: cyan;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+.projets {
+    background-color: rgb(40,110,110);
+    border:2px solid black;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding:0.5em;
+    margin: 0.3em 0.3em;
+    color: white;
+    width:45%;
+    height: auto;
+}
+.projets a{
+    display:block;
+    position: relative;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    top:40%;   
+}
+nav button {
+    background-color:transparent;
+    color:white;
+    border:none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    transition-delay: 0.1s;
+    transition-duration: 0.40s
+}
+
+nav button:hover{
+    color:black;
+    text-decoration:underline;
+    font-weight:bold;
+    font-size:1.1em;
+    transition-duration: 0.40s
+}
+nav ul li a{
+    color:white;
+    border:none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-delay: 0.1s;
+    transition-duration: 0.40s;
+    position: relative;
+    font-weight: none;
+    left:0.3em;
+
+}
+a:hover{color:black;
+    text-decoration:underline;
+    font-weight:bold;
+    font-size:1.1em;
+    transition-duration: 0.40s
+}
+#mail:after{
+    content:'Contact';
+}
+#mail:hover:after{
+    content:'dylanmaertens@gmail.com';
+    font-size: 0.8em;
+    position: relative;
+    left: -0.2em;
 }
 
 @media only screen and (max-width: 1140px){
-    #sidebar{
-        margin:auto;
+    body{
+        overflow: visible;
+        margin:0;
+        padding:0;
+        }
+    .sidebar_before{
         height: auto;
         align-items:center;
-        width: 80%;
+        width: auto;
+        position:sticky;
+        margin:0;
+        padding: 0;
+        border-radius: 0%;
         }
-    #competence{
+    .sidebar_before nav{
+        top:-15em;
+    }
+        .sidebar_before li button{
+        visibility: hidden;
+        cursor:none;
+    }
+    .sidebar_before #photo{
+        margin-top:0.5em;
+    }
+    .sidebar_before h1{
+        margin:0;
+        padding: 0;
+    }
+   
+    .sidebar_before nav li {
+        padding: 0;
+        margin: 0;
+    }
+    .sidebar_before a {
+        top:-2.5em;
+    }
+    .competence{
         flex-direction: column;
-        align-items:left;
+        position:sticky;
         margin:auto;
         height: auto;
         flex-wrap:wrap;
         width: auto;
-    }   
+        transform: translateY(0%);
+        }   
     .competences{
         align-items:center;
         height: auto;
         width: auto;
+        position:relative;
+        }
+    .portefolio{
+        position:sticky;
+        height: auto;
+        width: auto;
+        transform: translateY(0%);
     }
-}
+    .projets{
+        align-items:center;
+        height: auto;
+        width: auto;
+        position:relative;
 
-@media only screen and (min-width: 1920px){
-    body{
-        font-size: 1.7em;}
-    #side{
-        padding:2em 1em;
-    }
-    #photo{
-        width:300px;height:300px;
     }
 }

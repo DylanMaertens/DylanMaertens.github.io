@@ -5,34 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Index</title>
+    <script defer src='script.js'></script>
+    <title>Portefolio</title>
 </head>
 <body>
-<div id="page"> 
-    <div id="sidebar" style = " margin: 0.2em auto ;
-                                border: 2px solid black;
-                                border-radius: 5%;
-                                display:flex;
-                                flex-direction:column;
-                                align-content: center;
-                                color:white;
-                                width:70%;
-                                height:auto;">
-        <header>
-            <img id="photo" src="user.png" title="photo" style="display:block;margin:0.2em auto;border:1px solid black;border-radius:50%;"/>
-            <h1 style="margin-top:0.8em">Dylan Maertens</h1>
-            <div></div>
-        </header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="competences.html">Compétences</a></li>
-                <li><a title="Vide pour le moment">Portefolio</a></li>
-                <li><a href="mailto:dylanmaertens@gmail.com" id="mail"></a></li>
-                <li><a href="DylanMaertensCv.pdf" target="_blank">Télécharger le Cv</a></li>
-            </ul>
-        </nav>
+        <div class="sidebar_before">
+                    <ion-icon name="person-outline" id="photo"></ion-icon>
+                    <h1 id="nom">Dylan Maertens</h1>
+            <nav>
+                <ul>
+                    <li><button class="button" id="competences_btn">Compétences</button></li>
+                    <li><button class="button" id="portefolio_btn">Portefolio</button></li>
+                    <li><a id="mail" href="mailto:dylanmaertens@gmail.com"></a></li>
+                    <li><a href="CV.pdf" target="_blank" >Télécharger le Cv</a></li>
+                </ul>
+            </nav>
         </div>
-</div>
+
+        <div class="competence">
+        <div class="competences"><p>Compétences:</p><ul>
+            <li>HTML: Débutant</li>
+            <li>CSS: Débutant</li>
+        </ul></div>
+        <div class="competences"><p>Experiences:</p><ul>
+            <li>Cours HTMl / CSS Openclass room.</li>
+            </ul>
+        </div>
+        <div class="competences"><p>Qualités:</p> <ul>
+            <li>Autonome</li>
+            <li>Curieux</li>
+            <li>Organisé</li>
+        </ul></div>
+        <div class="competences"><p>Interets:</p> <ul>
+            <li>Informatique</li>
+            <li>Jeux vidéos</li>
+            <li>Musique</li>
+            <li>Technologie</li>
+        </ul></div>
+        <div class="competences"><p>Informations complémentaires:</p> <ul>
+            <li>Habite à Travecy</li>
+            <li>25 ans</li>
+            <li>Permis B + voiture</li>
+            <li>Anglais: intermédiaire (B2)</li>
+        </ul></div>
+        </div>
+
+        <div class='portefolio'>
+                        <li class='projets'><a href="toolbox.html" title="Toolbox">Lien vers la boite à outils.</a></li>
+                        <li class='projets'>Projet 2<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid optio ratione cupiditate accusantium assumenda, odit voluptate incidunt suscipit cumque perspiciatis blanditiis id quibusdam! Quo reprehenderit accusantium excepturi aspernatur ipsam incidunt?</p></li>
+                        <li class='projets'>Projet 3<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit fugiat aliquid doloremque voluptas neque a alias saepe ullam nemo. Unde numquam deserunt, similique possimus facere eligendi aliquam repellat odit a.</p></li>
+                        <li class='projets'>Projet 4<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos asperiores et amet repudiandae? Reprehenderit harum assumenda corporis animi in tempora voluptates ipsa? Distinctio, voluptate. Ea doloremque rem temporibus perspiciatis eaque.</p></li>
+                        <li class='projets'>Projet 5<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione maiores error perferendis corrupti nam. Praesentium, vitae quo! Deleniti est atque rem veritatis itaque! Sed veniam facilis ducimus quae cum eaque.</p></li>
+                        <li class='projets'>Projet 6<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid optio ratione cupiditate accusantium assumenda, odit voluptate incidunt suscipit cumque perspiciatis blanditiis id quibusdam! Quo reprehenderit accusantium excepturi aspernatur ipsam incidunt?</p></li>
+                        <li class='projets'>Projet 7<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit fugiat aliquid doloremque voluptas neque a alias saepe ullam nemo. Unde numquam deserunt, similique possimus facere eligendi aliquam repellat odit a.</p></li>        
+                        <li class='projets'>Projet 8<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit fugiat aliquid doloremque voluptas neque a alias saepe ullam nemo. Unde numquam deserunt, similique possimus facere eligendi aliquam repellat odit a.</p></li>        
+                        <li class='projets'>Projet 9<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit fugiat aliquid doloremque voluptas neque a alias saepe ullam nemo. Unde numquam deserunt, similique possimus facere eligendi aliquam repellat odit a.</p></li>        
+                        <li class='projets'>Projet 10<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit fugiat aliquid doloremque voluptas neque a alias saepe ullam nemo. Unde numquam deserunt, similique possimus facere eligendi aliquam repellat odit a.</p></li>        
+                        <li class='projets'>Projet 11<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit fugiat aliquid doloremque voluptas neque a alias saepe ullam nemo. Unde numquam deserunt, similique possimus facere eligendi aliquam repellat odit a.</p></li>        
+                        <li class='projets'>Projet 12<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit fugiat aliquid doloremque voluptas neque a alias saepe ullam nemo. Unde numquam deserunt, similique possimus facere eligendi aliquam repellat odit a.</p></li>        
+                        <li class='projets'>Projet 13<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit fugiat aliquid doloremque voluptas neque a alias saepe ullam nemo. Unde numquam deserunt, similique possimus facere eligendi aliquam repellat odit a.</p></li>        
+                    </div>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
