@@ -62,7 +62,7 @@ li{
 }
 .competence{  
     display: flex;
-    border:2px solid blue; /*Box*/ 
+    /*border:2px solid blue; /*Box*/ 
     flex-wrap: wrap;
     flex-direction: row;
     height:98vh;
